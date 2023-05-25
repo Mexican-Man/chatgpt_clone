@@ -20,7 +20,7 @@ jobs:
           flutter-version: '3.10.2'
       - run: flutter config --enable-web
       - run: flutter pub get
-      - run: flutter build web --release
+      - run: flutter build web --release --base-href "/chatgpt_clone/"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
